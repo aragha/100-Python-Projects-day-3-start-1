@@ -1,9 +1,11 @@
-# # print("Welcome to the rollercoaster!")
-# # height = int(input("What is your height in cm? "))
-# # 🚨 Don't change the code below 👇
-# number = int(input("Which number do you want to check? "))
-# # 🚨 Don't change the code above 👆
+def rollercoaster():
+  print("Welcome to the rollercoaster!")
+  height = float(input("What is your height in cm? "))
+
 def exercise1():
+  # 🚨 Don't change the code below 👇
+  number = int(input("Which number do you want to check? "))
+  # 🚨 Don't change the code above 👆  
 #Write your code below this line 👇
   x = number % 2
   if x == 0:
@@ -61,6 +63,40 @@ def exercise3():
   else:
     print("Not leap year.")
       
-
-
-exercise3()
+def Exercise4PizzaOrderPractice():
+  # 🚨 Don't change the code below 👇
+  print("Welcome to Python Pizza Deliveries!")
+  size = input("What size pizza do you want? S, M, or L ")
+  add_pepperoni = input("Do you want pepperoni? Y or N ")
+  extra_cheese = input("Do you want extra cheese? Y or N ")
+  # 🚨 Don't change the code above 👆
+  
+  #Write your code below this line 👇
+  if add_pepperoni == 'Y':
+    addpepp_b = True
+  else:
+    addpepp_b = False
+  if extra_cheese == 'Y':
+    excheese_b = True
+  else:
+    excheese_b = False
+  if size == 'S':
+    base_price = 15
+    if (addpepp_b):
+      base_price += 2
+  elif size == 'M':
+    base_price = 20
+    if (addpepp_b):
+      base_price += 3
+  else:
+    base_price = 25
+    if (addpepp_b):
+      base_price += 3  
+  if (excheese_b):
+    base_price += 1
+  print(f"Your final bill is: ${base_price}")
+  
+      
+# exercise3()
+# rollercoaster()
+Exercise4PizzaOrderPractice() 
